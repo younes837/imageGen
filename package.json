@@ -2,12 +2,22 @@
   "name": "imagegen",
   "version": "0.1.0",
   "private": true,
+  "browser": {
+    "crypto": false,
+    "stream": false,
+    "net": false,
+    "tls": false,
+    "fs": false,
+    "path": false,
+    "os": false,
+    "pg": false
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-     "postinstall": "drizzle-kit generate:pg"
+    "postinstall": "drizzle-kit generate:pg"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.11.0",
