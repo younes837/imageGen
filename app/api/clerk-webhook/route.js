@@ -1,6 +1,6 @@
 import { Webhook } from "svix";
 import { headers } from "next/headers";
-import { db } from "@/lib/db";
+import { db } from "@/lib/db/client";
 import { users } from "@/drizzle/schema";
 import { eq } from "drizzle-orm";
 
