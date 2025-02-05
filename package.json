@@ -2,7 +2,6 @@
   "name": "imagegen",
   "version": "0.1.0",
   "private": true,
-   
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -41,6 +40,7 @@
     "@radix-ui/react-toggle-group": "^1.1.1",
     "@radix-ui/react-tooltip": "^1.1.7",
     "@supabase/supabase-js": "^2.48.1",
+    "@vercel/postgres": "^0.10.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
@@ -52,7 +52,6 @@
     "lucide-react": "^0.474.0",
     "next": "15.1.6",
     "next-themes": "^0.4.4",
-    "postgres": "^3.4.5",
     "react": "^19.0.0",
     "react-day-picker": "^8.10.1",
     "react-dom": "^19.0.0",
@@ -72,15 +71,9 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.1"
   },
-   "browser": {
-      "crypto": false,
-      "stream": false,
-      "net": false,
-      "tls": false,
+  "browser": {
     "fs": false,
     "path": false,
-    "os": false,
-    "pg": false,
-    "perf_hooks": false
+    "os": false
   }
 }
